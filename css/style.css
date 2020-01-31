@@ -39,7 +39,7 @@ a{
 /* Gora */
 .ui{
     background: var(--krem);
-    height: 85vh;
+    height: 850px;
     text-align: center;
     padding: 10px;
     font-size: 30px;
@@ -93,10 +93,17 @@ a{
 }
 #info{
     font-size: 70px;
-    margin-right: 800px;
+    margin-right: 200px;
+    margin-left: 200px;
     color: seagreen;
 }
-
+.punktacja{
+    font-size: 55px;
+}
+#punkty{
+    font-size: 70px;
+    color: var(--topaz);
+}
 #sprawdz{
     font-size: 70px;
     padding: 40px;
