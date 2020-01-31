@@ -1,0 +1,105 @@
+/* GLOBAL */
+
+:root{
+    --bez:#DDF9C1;
+    --krem:#F8DDA4;
+    --zolty:#F9A03F;
+    --orange:#D45113;
+    --topaz:#813405;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* MENU */
+
+a{
+    text-decoration: none;
+}
+.menu{
+    text-align: center;
+    background: var(--krem);
+    padding: 50px;
+    height: 85vh;
+}
+.menu a{
+    display: inline-block;
+    background-color: var(--orange);
+    margin: 40px;
+    padding: 20px 100px;
+    width: 50%;
+    text-align: center;
+    color: var(--krem);
+    font-size: 55px;
+}
+
+/* ŁATWE */
+
+/* Gora */
+.ui{
+    background: var(--krem);
+    height: 85vh;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+.topbar .lvlbox {
+    display: inline-block;
+    width: 30%;
+
+}
+.topbar .timerbox {
+    display: inline-block;
+    width: 30%;
+}
+.topbar .zyciebox {
+    display: inline-block;
+    width: 30%;
+}
+#ilosczyc{
+    font-size: 90px;
+    color: #BA1B1D;
+}
+
+/* Srodek */
+.pytaniebar{
+    display: flex;
+    margin-top: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#skladnik1, #skladnik2, .znak, #wynik{
+    padding: 15px;
+    font-size: 150px;
+}
+#wynik{
+    width: 150px;
+    text-align: center;
+}
+.znak{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* Dol */
+.sprawdzbar{
+    display: flex;
+    margin-top: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#info{
+    font-size: 70px;
+    margin-right: 800px;
+    color: seagreen;
+}
+
+#sprawdz{
+    font-size: 70px;
+    padding: 40px;
+    background: var(--zolty);
+    border: 2px solid var(--orange);
+}
