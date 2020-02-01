@@ -75,7 +75,7 @@ a{
     font-size: 150px;
 }
 #wynik{
-    width: 150px;
+    width: 400px;
     text-align: center;
 }
 .znak{
@@ -95,6 +95,7 @@ a{
     font-size: 70px;
     margin-right: 200px;
     margin-left: 200px;
+    width: 300px;
     color: seagreen;
 }
 .punktacja{

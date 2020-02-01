@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Matematyka - Latwe</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./JS/latwe.js"></script>
   </head>
 
-  <body>
+  <body onload="dwieLosoweLiczby()">
     <div class="ui">
       <div class="topbar">
         <!-- Top bar -->
 
         <div class="lvlbox">
-          <div id="lvl">lvl: <span>1</span></div>
-          <progress value="35" max="100"></progress>
+          <div>lvl: <span id="lvl">1</span></div>
+          <progress id="progressbar" value="0" max="100"></progress>
         </div>
 
         <div class="timerbox">
@@ -45,8 +46,8 @@
           <div class="punktacja">
               <div><p>Punkty: <span id="punkty">0</span> </p></div>
           </div>
-        <div id="info"> dobrze !</div>
-        <button id="sprawdz">sprawdz</button>
+        <div id="info"></div>
+        <button id="sprawdz" onclick="main()">sprawdz</button>
       </div>
 
     </div>
