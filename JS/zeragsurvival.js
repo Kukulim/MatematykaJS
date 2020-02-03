@@ -1,14 +1,9 @@
-var time = 15000;
+var time = 0;
+var time2 = 1000;
 
 function timer() {
     setTimeout(function () {
-        time--;
-        if (time == 0) {
-
-            alert("Koniec GRY");
-            zrobLink();
-            time = "a";
-        }
+        time++;
 
         var min = Math.floor(time / 100 / 60);
         var sec = Math.floor(time / 100);
@@ -29,3 +24,19 @@ function timer() {
 
 }
 
+function timer2() {
+    setTimeout(function () {
+        time2--;
+        if (time2 == 0) {
+
+            alert("Koniec GRY");
+            zrobLink();
+            time2="a";
+        }
+        var sec = Math.floor(time2 / 100);
+        if (sec < 10) sec = "0" + sec;
+        document.getElementById('ilosczyc').innerHTML = sec;
+        timer2();
+    }, 10);
+
+}

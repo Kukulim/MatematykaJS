@@ -46,7 +46,7 @@ function main() {
         document.getElementById("info").style.color = "red";
         document.getElementById("info").textContent = "źle wynik to: " + suma;
         if (liczbazyc == 0) {
-            alert
+            
             alert("Porażka");
             zrobLink();
         }
