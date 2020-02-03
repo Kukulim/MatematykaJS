@@ -1,9 +1,10 @@
-var stopienTrudnosci = 5;
+var stopienTrudnosci = 10;
 var liczbazyc = 5;
 var punktyzdobyte = 0;
 var lvl = 1;
 var daneLosowe1 = 0;
 var daneLosowe2 = 0;
+
 
 function losuj() {
     var wartosc = Math.floor(Math.random() * stopienTrudnosci) + 1;
@@ -30,6 +31,7 @@ function main() {
         document.getElementById("info").style.color = "seagreen";
         document.getElementById("info").textContent = "dobrze !";
         document.getElementById("progressbar").value += 10;
+        time += 200;
         if (
             document.getElementById("progressbar").value >=
             document.getElementById("progressbar").max
@@ -37,8 +39,8 @@ function main() {
             lvl++;
             document.getElementById("lvl").textContent = lvl;
             document.getElementById("progressbar").value = 0;
-            document.getElementById("progressbar").max *= 1.4;
-            stopienTrudnosci += 10;
+            document.getElementById("progressbar").max *= 1.1;
+            stopienTrudnosci *= 2;
         }
     } else {
         liczbazyc--;
