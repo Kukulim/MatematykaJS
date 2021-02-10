@@ -12,14 +12,19 @@ function losuj() {
 
 function dwieLosoweLiczby() {
 
-    daneLosowe1 = losuj();
-    daneLosowe2 = losuj();
+    daneLosowe1 = 0;
+    daneLosowe2 = 0;
+    while(daneLosowe1<=daneLosowe2)
+    {
+      daneLosowe1 = losuj();
+      daneLosowe2 = losuj();
+    }
     document.getElementById("skladnik1").textContent = daneLosowe1;
     document.getElementById("skladnik2").textContent = daneLosowe2;
 }
 
 function main() {
-    var suma = parseInt(daneLosowe1) + parseInt(daneLosowe2);
+    var suma = parseInt(daneLosowe1) - parseInt(daneLosowe2);
 
     var punkty = document.getElementById("punkty");
     var ilosczyc = document.getElementById("ilosczyc");

@@ -28,7 +28,7 @@ function main() {
     punktyzdobyte++;
     punkty.textContent = punktyzdobyte;
     document.getElementById("info").style.color = "seagreen";
-    document.getElementById("info").textContent = "dobrze !";
+    document.getElementById("info").textContent = "good, u are right !";
     document.getElementById("progressbar").value += 10;
     if (
       document.getElementById("progressbar").value >=
@@ -44,7 +44,7 @@ function main() {
     liczbazyc--;
     ilosczyc.textContent = liczbazyc;
     document.getElementById("info").style.color = "red";
-    document.getElementById("info").textContent = "źle wynik to: " + suma;
+    document.getElementById("info").textContent = "wrong answer, result = "  + suma;
     if (liczbazyc == 0) {
       alert
       alert("Porażka");
